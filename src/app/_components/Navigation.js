@@ -124,7 +124,7 @@ function Navigation() {
           </div>
         </Link>
 
-        <ul className="items-center gap-[20px] text-[16px] font-semibold xl:flex hidden  ">
+        <ul className="items-center gap-[20px] text-[16px] font-semibold xl:flex hidden">
           {navItems.map((item, i) => {
             const isActive = item.href === pathname;
             return (

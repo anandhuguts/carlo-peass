@@ -3,6 +3,7 @@ import BlogsAndCaseStudy from "./Components/BlogAndCaseStudy";
 import blog from "@/modals/blog";
 import casestudy from "@/modals/casestudy";
 
+export const revalidate =0;
 
 export default async function Page() {
   try {
@@ -28,6 +29,8 @@ export default async function Page() {
       ...c,
       _id: c._id.toString(),
     }));
+    console.log("Latest blog:", blogs[0]?.title, blogs[0]?.createdAt);
+
 
     return (
       <div className="pb-30 sm:px-10 px-5">

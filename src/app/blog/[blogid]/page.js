@@ -17,7 +17,7 @@ export default async function page({ params }) {
     return <p>Blog not found</p>;
   }
 
-  // Convert ObjectId to string
+
   const serializedBlog = {
     ...blogDetails,
     _id: blogDetails._id.toString(),
